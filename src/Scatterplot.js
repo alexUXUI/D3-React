@@ -13,7 +13,7 @@ function Scatterplot({
     setSeleted
 }) {
 
-    const [state, setState] = useState({
+    const [state] = useState({
         xScale: d3
             .scaleLinear()
             .domain([0, 1])
@@ -23,20 +23,6 @@ function Scatterplot({
             .domain([0, 1])
             .range([height, 0])
     });
-
-    useEffect(() => {
-        const { yScale, xScale } = state;
-
-        yScale.range([height, 0]);
-        xScale.range([0, width]);
-
-        setState({
-            ...state,
-            yScale,
-            xScale
-        });
-
-    }, [height, width]);
 
     const { yScale, xScale } = state;
 
