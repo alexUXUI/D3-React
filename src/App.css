@@ -1,51 +1,81 @@
 .App {
   display: flex;
   height: 100vh;
-  width: 100vw;
-  align-items: center;
-  justify-content: space-evenly;
+  width: 100%;
   flex-direction: row;
+  justify-content: space-between;
+  background-color: #1c1c1c;
+  padding: 0 0 0 20px;
+}
+
+.app-root {
+  display: flex;
   background-color: #1c1c1c;
 }
 
-.legend {
-  display: flex;
-  width: 200px;
-  align-items: flex-start;
-  flex-direction: column;
-  background-color: #262626;
-  position: relative;
-  padding: 20px;
-  border-radius: 6px;
-  box-shadow: 0px 0px 33px -17px rgba(0,0,0,1);
-}
-
-svg {
-  box-shadow: 0px 0px 33px -17px rgba(0,0,0,1);
-  border-radius: 6px;
-  margin: 10px;
-  background: #262626;
-}
-
-h1, h3, p {
-  color: white;
-  margin: 0;
-  padding: 0;
-}
-
-h1 {
-  padding: 10px;
-}
-
-.legend h1 {
-  padding: 0
-}
-
-p {
-  padding: 5px 5px 5px 0px;
-}
-
-hr {
-  border: 1px solid #ccc;
+.app-root .links {
   width: 100%;
+  height: 100vh;
+  background: rgb(34, 34, 34);
+  box-shadow: 6px 0px 16px -5px rgb(0, 0, 0, 0.2);
+  position: relative;
+}
+
+.app-root .links .navigation {
+  display: flex;
+  width: 100%;
+}
+
+.app-root .links .navigation ul {
+  list-style: none;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.navigation ul li {
+  margin: 20px 0 20px 20px;
+}
+
+.navigation ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bolder;
+}
+
+.title {
+  color: rgb(243 19 131);
+  margin: 20px 0 20px 0;
+  display: block;
+}
+
+.title h4, h1 {
+  color: rgb(243 19 131);
+  padding: 0 0 0 20px;
+  margin: 0;
+}
+
+.navigation ul li a:hover {
+  color: rgb(243 19 131)
+}
+
+
+
+.links {
+  /* min-width: 200px; */
+  width: 200px;
+  max-width: 200px;
+  /* position: relative; */
+
+}
+
+.home {
+  height: 100%;
+  width: 100%;
+  color: rgb(243 19 131);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 40px;
 }
